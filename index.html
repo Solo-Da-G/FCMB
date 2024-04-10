@@ -10,6 +10,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <style>
     * {
       padding: 0;
@@ -88,6 +89,8 @@
       background: url(./asset/img/ninbanner.png);
       width: 100%;
       height: 550px;
+      background-position: center;
+      background-size: cover;
     }
 
     .pic2-slide {
@@ -121,24 +124,24 @@
     .slider-1 {
       text-align: left;
       padding-right: 50px;
-      margin-bottom: 280px;
+      margin-bottom: 275px;
       font-size: 44px;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
       color: #5B2784;
-      margin-left: -90px;
+      margin-left: -50px;
     }
 
     .slider-p {
       position: absolute;
       text-align: left;
-      margin-top: -250px;
+      margin-top: -230px;
       font-size: 18px;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 600;
       color: #3D4248;
       line-height: 2rem;
-      margin-left: -90px;
+      margin-left: -50px;
     }
 
     /* .slide-butt {
@@ -152,15 +155,15 @@
 
     .button-slides {
       background: purple;
-
-      position: absolute;
+      /* position: absolute; */
       padding: 10px;
       color: white;
       font-weight: 500;
       width: 200px;
       border: none;
-      margin-left: -560px;
-      margin-top: -90px;
+      float: left;
+      margin-left: -50px;
+      margin-top: -80px;
 
     }
 
@@ -279,22 +282,25 @@
       background: orange;
       color: rgb(25, 25, 52);
     }
-    .card2{
+
+    .card2 {
       height: 260px;
       background: rgb(244, 241, 241);
     }
-    .card2-header{
+
+    .card2-header {
       color: #5B2784;
       font-weight: 680;
     }
-    .card2-text{
+
+    .card2-text {
       color: #3D4248;
       font-size: 16px;
       font: 500;
       padding-top: 10px;
     }
 
-    .btn-card2{
+    .btn-card2 {
       padding: 5px;
       line-height: 2rem;
       width: 170px;
@@ -304,11 +310,66 @@
       margin-top: 45px;
 
     }
-    .btn-card2:hover{
+
+    .btn-card2:hover {
       color: orange;
-      
+
     }
 
+
+    .list li {
+      display: block;
+      list-style: none;
+      color: #5B2784;
+      line-height: 2rem;
+      font-size: 20px;
+    }
+
+    .list a {
+      text-decoration: none;
+      color: #5B2784;
+
+    }
+
+    table {
+      width: 373px;
+      padding: 15px;
+      height: 120px;
+      box-shadow: 0px 4px 4px 3px rgb(154, 153, 153);
+      margin-top: 30px;
+    }
+
+    table td {
+      padding: 10px;
+
+    }
+
+    table tr {
+      border: 1px dotted grey;
+      padding: 10px;
+    }
+
+    .table-head1 {
+      background: #5B2784;
+      padding: 10px;
+      color: white;
+      font-weight: 800;
+      border: none;
+      font-size: 19px;
+    }
+
+    .tabrow1 {
+      background: #f8f9fa;
+    }
+
+    .tab-data {
+      color: #5B2784;
+      font-weight: 700;
+    }
+
+    .tab-data2 {
+      font-weight: 700;
+    }
   </style>
 
 
@@ -503,75 +564,134 @@
     <div class="line"></div>
   </div>
   </div>
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card card2" style="width: 23rem;">
-        <div class="card-body">
-          <h5 class="card2-header">TAKE CHARGE WITH *329#</h5>
-          <p class="card2-text">Perform all your banking transactions on <br> the go - buy airtime,
-             transfer money, <br> access a loan and more.</p>
-             <button class="btn btn-card2">Learn More<i class="fa-solid fa-angle-right"></i></button>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card2" style="width: 23rem;">
+          <div class="card-body">
+            <h5 class="card2-header">TAKE CHARGE WITH *329#</h5>
+            <p class="card2-text">Perform all your banking transactions on <br> the go - buy airtime,
+              transfer money, <br> access a loan and more.</p>
+            <button class="btn btn-card2">Learn More <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card2" style="width: 23rem;">
+          <div class="card-body">
+            <h5 class="card2-header">EASY ACCOUNT</h5>
+            <p class="card2-text">No bank visits. No paperwork. No BVN.
+              Simply <br> open a bank account with your phone number <br> on your phone – no data required.</p>
+            <button class="btn btn-card2">Learn More <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card2" style="width: 23rem;">
+          <div class="card-body">
+            <h5 class="card2-header">PTA/BTA DEFAULTERS</h5>
+            <p class="card2-text">List of customers who breached Central <br> Bank of Nigeria (CBN)
+              Policy on <br> purchase of FX for PTA/BTA</p>
+            <button class="btn btn-card2">Learn More <i class="fa-solid fa-angle-right"></i></button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="card card2" style="width: 23rem;">
-        <div class="card-body">
-          <h5 class="card2-header">EASY ACCOUNT</h5>
-          <p class="card2-text">No bank visits. No paperwork. No BVN. 
-            Simply <br> open a bank account with your phone number <br> on your phone – no data required.</p>
-          <button class="btn btn-card2">Learn More<i class="fa-solid fa-angle-right"></i></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card card2" style="width: 23rem;">
-        <div class="card-body">
-          <h5 class="card2-header">PTA/BTA DEFAULTERS</h5>
-          <p class="card2-text">List of customers who breached Central <br> Bank of Nigeria (CBN)
-             Policy on <br> purchase of FX for PTA/BTA</p>
-          <button class="btn btn-card2">Learn More<i class="fa-solid fa-angle-right"></i></button>
-        </div>
-      </div>
-    </div>
   </div>
- 
+
   <div class="container-fluid ">
     <div class="line"></div>
   </div>
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="list">
-<li>
-<a href=""><i class="fa-solid fa-angle-right"></i> FCMB Virtual Card </a>
-</li>
 
-<li>
-  <a href=""><i class="fa-solid fa-angle-right"></i>FCMB-Self Service </a>
-</li>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="list">
+          <li>
+            <a href=""><i class="fa-solid fa-angle-right"></i> FCMB Virtual Card </a>
+          </li>
 
-<li>
-  <a href=""><i class="fa-solid fa-angle-right"></i>FCMB New Mobile </a>
-</li>
-</div>
+          <li>
+            <a href=""><i class="fa-solid fa-angle-right"></i> FCMB-Self Service </a>
+          </li>
 
-    </div>
+          <li>
+            <a href=""><i class="fa-solid fa-angle-right"></i> FCMB New Mobile </a>
+          </li>
+        </div>
+        <div class="table-section1">
+          <table table-resposive border="1">
 
-    <div class="col-md-6">
-      
+            <th>
+              <tr class="table-head1">
+                <td>Currency</td>
+                <td>We Buy</td>
+                <td>We Sell</td>
+              </tr>
+            </th>
+
+            <th>
+              <tr class="tabrow1">
+                <td></td>
+                <td class="tab-data">AUTONOMOUS</td>
+                <td></td>
+              </tr>
+            </th>
+            <tbody>
+              <tr>
+                <td class="tab-data2">USD</td>
+                <td>1200.0000</td>
+                <td>1220.0000</td>
+              </tr>
+              <tr class="tabrow1">
+                <td class="tab-data2">GBP</td>
+                <td>1490.5000</td>
+                <td>1559.8000</td>
+              </tr>
+              <tr>
+                <td class="tab-data2">EUR</td>
+                <td>1276.0000</td>
+                <td>1349.0000</td>
+              </tr>
+              <tr class="tabrow1">
+                <td></td>
+                <td class="tab-data">CROSS SELL</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="tab-data2">GBP/USD</td>
+                <td>1.2421</td>
+                <td>1.2830</td>
+              </tr>
+              <tr class="tabrow1">
+                <td class="tab-data2">EUR/USD</td>
+                <td>1.0633</td>
+                <td>1.1041</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div>
+          <!-- youtube video link -->
+          <iframe width="600" height="400" src="https://www.youtube.com/embed/V4ygX8ODYHQ" frameborder="0"
+            allowfullscreen></iframe>
+              </div>
+      </div>
     </div>
   </div>
-</div>
 
-</div>
+  </div>
 </head>
-
-<body>
-
+<script>
+  
+</script>
 </body>
 
 </html>
