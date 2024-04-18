@@ -21,45 +21,84 @@
       box-sizing: border-box;
     }
 
-    .logo {
-      margin-top: 50px;
-    }
 
-    header {
+
+    /* header {
       display: flex;
       width: 100%;
       height: 200px;
       background: whitesmoke;
       align-items: center;
 
-    }
+    } */
 
-    nav.navbar ul {
-
-      display: inline-flex;
+    .navbar {
+      width: 100%;
       height: 50px;
-      width: auto;
-      /* background:linear-gradient(rgba(165, 7, 118, 0.3),(rgba(120,55,22,0.4),)) ; */
-      background: purple;
-      list-style: none;
-      padding: 15px;
-      /* padding-left: 80px; */
-      gap: 20px;
-      font-weight: 600;
-      color: rgb(210, 205, 205);
-      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: url(./asset/img/topbar_back.jpg);
+      padding: 0px 50px;
+      margin-bottom: 0;
+    }
 
+    .one {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      font-weight: 600;
+      color: white;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .two {
+      color: white;
+      font-size: 17px;
+      font-weight: 600;
+      background: hsla(279, 29%, 48%, 0.5);
+      list-style: none;
+      margin-bottom: 0;
+      padding: 10px;
+    }
+
+    .navbar2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 50px;
+      margin-bottom: 0;
+      margin-top: 20px;
 
     }
 
-    .top-end {
+    .navbar2 li {
+      list-style: none;
+
+    }
+
+    .nestednavbar {
+      margin-left: 250px;
+    }
+
+    .lastnav li {
+      list-style: none;
+      display: inline-flex;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* .top-end {
 
       margin-left: 590px;
       font-size: 17px;
       background: hsla(330, 12%, 47%, 0.5);
       padding: 10px;
 
-    }
+    } */
 
     .number {
       color: orange;
@@ -67,18 +106,73 @@
       gap: 20px;
     }
 
-    nav.topnavbar ul li {
+    .topnavbar ul li {
       display: inline-flex;
       align-items: center;
       list-style: none;
       justify-content: space-between;
-      padding-bottom: 60px;
       background-origin: white;
-      width: 100%;
+
+    }
+
+    .top-1 {
+      width: 200px;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 7px;
+      text-align: center;
+      background: rgb(215, 10, 82);
+      padding-left: 26px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .top-2 {
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 7px;
+      padding-left: 26px;
+      background: purple;
+      width: 200px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .top-3 {
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 7px;
+      background: purple;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    input[type=text] {
+      padding: 5px;
+      border: 1px solid #5B2784;
+      width: 230px;
+      outline: none;
+      box-shadow: 0px 8px 16px 0px rgba(104, 28, 69, 0.2);
+      border-right: none;
 
 
     }
 
+    .top-button {
+      margin-left: -4px;
+      border: 1px solid #5B2784;
+      border-left: none;
+      padding: 5px;
+      color: #5B2784;
+      box-shadow: 0px 8px 16px 0px rgba(104, 28, 69, 0.2);
+      outline: none;
+      background: white;
+    }
+
+    /* 
     nav.nestednavbar {
 
       display: inline-flex;
@@ -86,7 +180,7 @@
       justify-content: space-between;
       background: none;
 
-    }
+    }  */
 
     .pic1-slide {
       background: url(./asset/img/ninbanner.png);
@@ -188,7 +282,7 @@
       font-size: 17px;
       border: none;
       margin-top: 81px;
-      margin-left: 30px;
+      margin-left: 53px;
     }
 
     .btn-1 {
@@ -198,7 +292,7 @@
       border-radius: 0px 0px 0px 0px;
       font-size: 17px;
       border: none;
-      margin-top: 33px;
+      margin-top: 57px;
     }
 
     .btn-2 {
@@ -208,7 +302,7 @@
       border-radius: 0px 0px 0px 0px;
       font-size: 17px;
       border: none;
-      margin-top: 57px;
+      margin-top: 65px;
     }
 
     .btn-3 {
@@ -218,7 +312,7 @@
       border-radius: 0px 0px 0px 0px;
       font-size: 17px;
       border: none;
-      margin-top: 67px;
+      margin-top: 52px;
     }
 
 
@@ -320,7 +414,7 @@
     }
 
 
-    .list li {
+     .list li {
       display: block;
       list-style: none;
       color: #5B2784;
@@ -332,13 +426,13 @@
       text-decoration: none;
       color: #5B2784;
 
-    }
+    } 
 
     table {
       width: 373px;
       padding: 15px;
       height: 120px;
-      box-shadow: 0px 4px 4px 3px rgb(154, 153, 153);
+      box-shadow: 0px 4px 4px 3px rgba(154, 153, 153, 0.3);
       margin-top: 30px;
     }
 
@@ -352,7 +446,7 @@
       padding: 10px;
     }
 
-    .table-head1 {
+    #table-head1 {
       background: #5B2784;
       padding: 10px;
       color: white;
@@ -361,48 +455,107 @@
       font-size: 19px;
     }
 
-    .tabrow1 {
+    #tabrow1 {
       background: #f8f9fa;
     }
 
-    .tab-data {
+    #tab-data {
       color: #5B2784;
       font-weight: 700;
     }
 
-    .tab-data2 {
+    #tab-data2 {
       font-weight: 700;
     }
 
-    .wide-table{
-      width: 100%;
+
+
+    .table {
       border: none;
       box-shadow: none;
       padding: 4px;
-      background:rgb(231, 227, 227);
+
+
     }
 
-    .wide-table th{
+
+    .table th {
       color: #5B2784;
+      border: none;
     }
-    .wide-table a{
+
+    .wide-table a {
       text-decoration: none;
       font-size: 12px;
       color: #6a4982;
     }
-    .wide-table tr{
+
+    .table tr {
       border: none;
       padding: 4px;
     }
 
-    .wide-table td{
+    .table td {
       padding: 4px;
+      border: none;
     }
 
-    .wide-table:hover a{
+    .wide-table:hover a {
       border-bottom: 90px;
       color: #6a4982;
     }
+
+    .foot1 {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      background: url(./asset/img/footer_you_i_back.jpg);
+      padding: 0px 15px;
+    }
+
+    .foot1-text{
+      list-style: none;
+      font-size: 23px;
+      color: white;    
+      /* margin-left: 75%; */
+      justify-content:right;
+      position:absolute;
+      
+    }
+    .footer2{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .logos-icons li{
+      display: inline-flex;
+      list-style: none;
+      padding: 12px 12px;
+      gap: 100px;
+      color:white;
+      justify-content: space-between;
+      background:#5B2784;
+      font-size: 24px;
+      border-radius: 300px 300px 300px 300px;
+      cursor: pointer;
+
+    }
+
+    .footer2-ul li{
+      display: inline-flex;
+      list-style: none;
+      padding: 12px 12px;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer2-ul a{
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+    }
+
   </style>
 
 
@@ -414,36 +567,50 @@
 
 
   <header>
-    <div class="logo">
-      <img src="./asset/img/logo.png" alt="" width="120px">
-    </div>
-    <nav class="navbar">
 
-      <ul>
-        <li>HOME</li>
-        <li>PERSONAL</li>
-        <li>BUSINESS</li>
-        <li>COPERATE</li>
-        <li class="top-end">TODAY'S SHARE PRICE: <span class="number"> &#x20A6;8.45 </span></li>
+    <nav class="general">
+      <div class="navbar">
+        <ul class="one">
+          <li>HOME</li>
+          <li>PERSONAL</li>
+          <li>BUSINESS</li>
+          <li>CORPERATE</li>
+        </ul>
 
-      </ul>
-
-
-      <div class="topnavbar">
-        <ul>
-          <li>OPEN AN ACCOUNT</li>
-          <li>INTERNET BANKING</li>
-          <li>CONTACT US</li>
-
-          <li><input type="text" name="" placeholder="Search"></li>
-          <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
-          </form>
-          </li>
+        <ul class="two">
+          <li class="">TODAY'S SHARE PRICE: <span class="number"> &#x20A6;8.45 </span></li>
         </ul>
       </div>
+
+      <div class="navbar2">
+
+        <div class="logo">
+          <a href=""><img src="./asset/img/logo.png" alt="" width="120px"></a>
+        </div>
+
+        <div class="topnavbar">
+          <ul>
+
+            <li class="top-1">OPEN AN ACCOUNT</li>
+
+            <li class="top-2">INTERNET BANKING</li>
+
+            <li class="top-3">CONTACT US</li>
+
+            <li><input type="text" name="" placeholder="Search"></li>
+            <li><button class="top-button"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            </form>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
       <div class="nestednavbar">
-        <ul>
-          <li>Personal Banking</li>
+
+        <ul class="lastnav">
+          <li>PERSONAL BANKING</li>
           <li>BUSINESS BANKING</li>
           <li>CORPORATE BANKING</li>
           <li>GROUP & SUBSIDIARIES</li>
@@ -659,7 +826,7 @@
           <table table-resposive border="1">
 
             <th>
-              <tr class="table-head1">
+              <tr id="table-head1">
                 <td>Currency</td>
                 <td>We Buy</td>
                 <td>We Sell</td>
@@ -667,40 +834,40 @@
             </th>
 
             <th>
-              <tr class="tabrow1">
+              <tr id="tabrow1">
                 <td></td>
-                <td class="tab-data">AUTONOMOUS</td>
+                <td id="tab-data">AUTONOMOUS</td>
                 <td></td>
               </tr>
             </th>
             <tbody>
               <tr>
-                <td class="tab-data2">USD</td>
+                <td id="tab-data2">USD</td>
                 <td>1200.0000</td>
                 <td>1220.0000</td>
               </tr>
-              <tr class="tabrow1">
-                <td class="tab-data2">GBP</td>
+              <tr id="tabrow1">
+                <td id="tab-data2">GBP</td>
                 <td>1490.5000</td>
                 <td>1559.8000</td>
               </tr>
               <tr>
-                <td class="tab-data2">EUR</td>
+                <td id="tab-data2">EUR</td>
                 <td>1276.0000</td>
                 <td>1349.0000</td>
               </tr>
-              <tr class="tabrow1">
+              <tr id="tabrow1">
                 <td></td>
-                <td class="tab-data">CROSS SELL</td>
+                <td id="tab-data">CROSS SELL</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="tab-data2">GBP/USD</td>
+                <td id="tab-data2">GBP/USD</td>
                 <td>1.2421</td>
                 <td>1.2830</td>
               </tr>
-              <tr class="tabrow1">
-                <td class="tab-data2">EUR/USD</td>
+              <tr id="tabrow1">
+                <td id="tab-data2">EUR/USD</td>
                 <td>1.0633</td>
                 <td>1.1041</td>
               </tr>
@@ -723,10 +890,12 @@
     <div class="line"></div>
   </div>
 
-  <div class="container-fluid mt-4">
+  <div class="container-fluid mt-4 contain-table">
+
     <div class="wide-table">
-      <h2>SITEMAP</h2>
-      <table table-responsive border="1" class="wide-table">
+      <table class="table table-secondary table-resposive table-boarder=0">
+
+        <h4>SITEMAP</h4>
         <th>
           Personal Banking
         </th>
@@ -753,90 +922,123 @@
             <td><a href="">OUR HISTORY</a></td>
             <td><a href="">TELEPHONE SELF SERVICE</a></td>
           </tr>
-            
-         <tr>
-          <td><a href="">INVESTMENTS</a></td>
-          <td><a href="">SAVINGS ACCOUNTS</a></td>
-          <td><a href="">CASH MANGEMENT <br> SOLUTIONS</BR></a></td>
-          <td><a href="">FCMB CAPITAL MARKETS</a></td>
-          <td><a href="">INVESTORS RELATIONS</a></td>
-          <td><a href="">CURRENT <br> CAMPAIGNS/PROMOS</a></td>
-        </tr>
 
-          
-         <tr>
-          <td><a href="">LOANS AND CREDIT CARDS</a></td>
-          <td><a href="">LOANS</a></td>
-          <td><a href="">CORPORATE FINANCE</a></td>
-          <td><a href="">FCMB ASSETS MANAGEMENTS</a></td>
-          <td><a href="">CSR</a></td>
-          <td><a href="">CAREERS</a></td>
-        </tr>
+          <tr>
+            <td><a href="">INVESTMENTS</a></td>
+            <td><a href="">SAVINGS ACCOUNTS</a></td>
+            <td><a href="">CASH MANGEMENT <br> SOLUTIONS</BR></a></td>
+            <td><a href="">FCMB CAPITAL MARKETS</a></td>
+            <td><a href="">INVESTORS RELATIONS</a></td>
+            <td><a href="">CURRENT <br> CAMPAIGNS/PROMOS</a></td>
+          </tr>
 
-        
-        <tr>
-          <td><a href="">NON-RESIDENT NIGERIAN <br> (NRN) BANKING</a></td>
-          <td><a href="">BONDS AND GUARANTEES</a></td>
-          <td><a href=""></a></td>
-          <td><a href="">FCMB UK</a></td>
-          <td><a href="">SUBSTAINABILITY</a></td>
-          <td><a href="">CUSTOMERS FEEDBACK</a></td>
-        </tr>
 
-        
-        <tr>
-          <td><a href="">WAYS TO BANKING</a></td>
-          <td><a href="">TRADE SERVICE</a></td>
-          <td><a href=""></a></td>
-          <td><a href="">FCMB PENSION LIMITED</a></td>
-          <td><a href="">OUR LEADERSHIP</a></td>
-          <td><a href="">CUSTOMER SERVICE</a></td>
-        </tr>
+          <tr>
+            <td><a href="">LOANS AND CREDIT CARDS</a></td>
+            <td><a href="">LOANS</a></td>
+            <td><a href="">CORPORATE FINANCE</a></td>
+            <td><a href="">FCMB ASSETS MANAGEMENTS</a></td>
+            <td><a href="">CSR</a></td>
+            <td><a href="">CAREERS</a></td>
+          </tr>
 
-        
-        <tr>
-          <td><a href="">BANCASURRANCE</a></td>
-          <td><a href="">PAYMENT AND COLLECTION</a></td>
-          <td><a href=""></a></td>
-          <td><a href="">CREDIT DIRECT LIMITED</a></td>
-          <td><a href="">BOARD OF DIRECTORS</a></td>
-          <td><a href=""></a></td>
-        </tr>
 
-        
-        <tr>
-          <td><a href=""></a></td>
-          <td><a href="">WAYS TO BANK</a></td>
-          <td><a href=""></a></td>
-          <td><a href="">FCMB TRUSTEES</a></td>
-          <td><a href="">MEDIA RELATIONS</a></td>
-          <td><a href=""></a></td>
-        </tr>
+          <tr>
+            <td><a href="">NON-RESIDENT NIGERIAN <br> (NRN) BANKING</a></td>
+            <td><a href="">BONDS AND GUARANTEES</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">FCMB UK</a></td>
+            <td><a href="">SUBSTAINABILITY</a></td>
+            <td><a href="">CUSTOMERS FEEDBACK</a></td>
+          </tr>
 
-        
-        <tr>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href="">AWARDS AND RECOGNITION</a></td>
-          <td><a href=""></a></td>
-        </tr>
 
-        
-        <tr>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href=""></a></td>
-          <td><a href="">OUR POLICY</a></td>
-          <td><a href=""></a></td>
-        </tr>
+          <tr>
+            <td><a href="">WAYS TO BANKING</a></td>
+            <td><a href="">TRADE SERVICE</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">FCMB PENSION LIMITED</a></td>
+            <td><a href="">OUR LEADERSHIP</a></td>
+            <td><a href="">CUSTOMER SERVICE</a></td>
+          </tr>
+
+
+          <tr>
+            <td><a href="">BANCASURRANCE</a></td>
+            <td><a href="">PAYMENT AND COLLECTION</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">CREDIT DIRECT LIMITED</a></td>
+            <td><a href="">BOARD OF DIRECTORS</a></td>
+            <td><a href=""></a></td>
+          </tr>
+
+
+          <tr>
+            <td><a href=""></a></td>
+            <td><a href="">WAYS TO BANK</a></td>
+            <td><a href=""></a></td>
+            <td><a href="">FCMB TRUSTEES</a></td>
+            <td><a href="">MEDIA RELATIONS</a></td>
+            <td><a href=""></a></td>
+          </tr>
+
+
+          <tr>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href="">AWARDS AND RECOGNITION</a></td>
+            <td><a href=""></a></td>
+          </tr>
+
+
+          <tr>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td><a href="">OUR POLICY</a></td>
+            <td><a href=""></a></td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
   </div>
+  </div>
+  <div class="container-fluid">
+    <footer>
+      <div class="foot1">
+        <li class="foot1-text">my bank and I</li>
+      </div>
+      <div class="footer2">
+        <div class="logos-icons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin-in"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+        </div>
+        <div class="footer-list">
+          <ul class="footer2-ul">
+           <li><a href="">PRIVACY POLICY</a></li>
+            <li><a href="">PRESS RELEASES</a></li>
+            <li><a href="">SHARE PRICE</a></li>
+            <li><a href="">WHISTLE BLOWER</a></li>
+            <li><a href="">FRAUD PREVENTION</a></li>
+            <li><a href="">AML</a></li>
+            <li><a href="">CAREERS</a></li>
+            
+          </ul>
+        </div>
+       
+      </div>
+      <p class="foot-para">© 2024 First City Monument Bank (Licensed by the Central Bank of Nigeria)</p>
+    </footer>
+  </div>
+
 </head>
 
 </body>
