@@ -414,7 +414,7 @@
     }
 
 
-     .list li {
+    .list li {
       display: block;
       list-style: none;
       color: #5B2784;
@@ -426,7 +426,7 @@
       text-decoration: none;
       color: #5B2784;
 
-    } 
+    }
 
     table {
       width: 373px;
@@ -468,41 +468,59 @@
       font-weight: 700;
     }
 
+.container-contain{
+  background: #f8f9fa;
+}
 
-
-    .table {
+.tab-text{
+  font-weight: 700;
+  color: #3D4248;
+}
+    .table-second {
       border: none;
       box-shadow: none;
       padding: 4px;
 
-
     }
 
+    tbody{
+      
+    }
 
-    .table th {
+    .table-second th {
       color: #5B2784;
       border: none;
+      background: #f8f9fa;
     }
 
-    .wide-table a {
+    .table-second a {
       text-decoration: none;
       font-size: 12px;
       color: #6a4982;
+      transition: border-bottom 2s ease;
     }
 
-    .table tr {
+    .table-second tr {
       border: none;
       padding: 4px;
+      
     }
 
-    .table td {
+    .table-second td {
       padding: 4px;
       border: none;
+      background: #f8f9fa;
+      /* line-height: 1rem; */
     }
 
-    .wide-table:hover a {
+    .table-second td:hover a {
       border-bottom: 90px;
       color: #6a4982;
+      border-bottom: 2px solid #6a4982;
+      
+    }
+    .container-end{
+      width: 100%;
     }
 
     .foot1 {
@@ -514,35 +532,42 @@
       padding: 0px 15px;
     }
 
-    .foot1-text{
+    .foot1-text {
       list-style: none;
       font-size: 23px;
-      color: white;    
-      /* margin-left: 75%; */
-      justify-content:right;
-      position:absolute;
-      
+      color: white;
+      margin-left: 75%;
+      justify-content: right;
+      position: absolute;
+
     }
-    .footer2{
+
+    .footer2 {
       display: flex;
       align-items: center;
       margin-top: 20px;
     }
-    .logos-icons li{
+
+    .logos-icons li {
       display: inline-flex;
       list-style: none;
       padding: 12px 12px;
       gap: 100px;
-      color:white;
+      color: white;
       justify-content: space-between;
-      background:#5B2784;
+      background: #5B2784;
       font-size: 24px;
       border-radius: 300px 300px 300px 300px;
       cursor: pointer;
 
     }
 
-    .footer2-ul li{
+    .logos-icons li:hover{
+     background: orange;
+
+    }
+
+    .footer2-ul li {
       display: inline-flex;
       list-style: none;
       padding: 12px 12px;
@@ -550,11 +575,93 @@
       gap: 20px;
     }
 
-    .footer2-ul a{
+    .footer2-ul a {
       text-decoration: none;
       color: black;
       font-size: 15px;
     }
+    .foot-para{
+      font-size: 12px;
+      color: #3D4248;
+      padding:10px;
+
+    }
+
+    @media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+      display: none;
+   
+    }
+    .navbar2 {
+      
+      display:none;
+      
+    }
+    .topnavbar {
+      display:none;
+      
+
+    }
+    .lastnav li {
+     
+      display:none;
+    }
+
+    .pic1-slide {
+      background: url(./asset/img/ninbanner.png);
+      width: 100%;
+      height: 270px;
+      background-position: center;
+      background-size: 30rem;
+    }
+
+    .pic2-slide {
+      background: url(./asset/img/Refer\ &\ Win\ Promo_1349x380_Without_Image_0.jpg);
+      width: 100%;
+      height: 270px;
+      background-position: center;
+      background-size: 39rem;
+    }
+
+    .pic3-slide {
+      background: url(./asset/img/Hybrid-online-account-opening_0.jpg);
+      width: 100%;
+      height: 270px;
+      background-position: center;
+      background-size: 47rem;
+    }
+
+    .pic4-slide {
+      background: url(./asset/img/Website\ Banner\ Refresh_Business\ Loans.jpg);
+      width: 100%;
+      height: 270px;
+      background-position: center;
+      background-size: 30rem;
+    }
+
+    .pic5-slide {
+      background: url(./asset/img/Website\ Banner\ Refresh_GRO.jpg);
+      width: 100%;
+      height: 270px;
+      background-position: center;
+      background-size: 30rem;
+    }
+
+
+
+    iframe{
+      width: 100%;
+    }
+
+    .container-tab{
+      width: 100%;
+    }
+
+
+  }
 
   </style>
 
@@ -569,26 +676,26 @@
   <header>
 
     <nav class="general">
-      <div class="navbar">
-        <ul class="one">
+      <div class="navbar navbar-media">
+        <ul class="one one-media">
           <li>HOME</li>
           <li>PERSONAL</li>
           <li>BUSINESS</li>
           <li>CORPERATE</li>
         </ul>
 
-        <ul class="two">
-          <li class="">TODAY'S SHARE PRICE: <span class="number"> &#x20A6;8.45 </span></li>
+        <ul class="two two-media">
+          <li>TODAY'S SHARE PRICE: <span class="number"> &#x20A6;8.45 </span></li>
         </ul>
       </div>
 
-      <div class="navbar2">
+      <div class="navbar2 navbar2-media">
 
         <div class="logo">
           <a href=""><img src="./asset/img/logo.png" alt="" width="120px"></a>
         </div>
 
-        <div class="topnavbar">
+        <div class="topnavbar topnavbar-media">
           <ul>
 
             <li class="top-1">OPEN AN ACCOUNT</li>
@@ -609,7 +716,7 @@
 
       <div class="nestednavbar">
 
-        <ul class="lastnav">
+        <ul class="lastnav lastnav-media">
           <li>PERSONAL BANKING</li>
           <li>BUSINESS BANKING</li>
           <li>CORPORATE BANKING</li>
@@ -877,7 +984,7 @@
 
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 you-tube">
         <div>
           <!-- youtube video link -->
           <iframe width="600" height="400" src="https://www.youtube.com/embed/V4ygX8ODYHQ" frameborder="0"
@@ -890,12 +997,12 @@
     <div class="line"></div>
   </div>
 
-  <div class="container-fluid mt-4 contain-table">
+  <div class="container-fluid mt-4 container-contain table-responsive">
+    <div class="container container-tab">
+    <!-- <div class="wide-table"> -->
+      <table class="table table-second table-boarder=0">
 
-    <div class="wide-table">
-      <table class="table table-secondary table-resposive table-boarder=0">
-
-        <h4>SITEMAP</h4>
+        <h4 class="tab-text">SITEMAP</h4>
         <th>
           Personal Banking
         </th>
@@ -1007,36 +1114,38 @@
   </div>
   </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-end">
     <footer>
       <div class="foot1">
-        <li class="foot1-text">my bank and I</li>
-      </div>
+    <li class="foot1-text">my bank and I</li>
+     </div>
+    </div>
+    <div class="container">
       <div class="footer2">
-        <div class="logos-icons">
-          <li><i class="fa-brands fa-facebook-f"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-linkedin-in"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-whatsapp"></i></li>
-        </div>
-        <div class="footer-list">
-          <ul class="footer2-ul">
-           <li><a href="">PRIVACY POLICY</a></li>
-            <li><a href="">PRESS RELEASES</a></li>
-            <li><a href="">SHARE PRICE</a></li>
-            <li><a href="">WHISTLE BLOWER</a></li>
-            <li><a href="">FRAUD PREVENTION</a></li>
-            <li><a href="">AML</a></li>
-            <li><a href="">CAREERS</a></li>
-            
-          </ul>
-        </div>
-       
-      </div>
-      <p class="foot-para">© 2024 First City Monument Bank (Licensed by the Central Bank of Nigeria)</p>
-    </footer>
+    <div class="logos-icons">
+      <li><i class="fa-brands fa-facebook-f"></i></li>
+      <li><i class="fa-brands fa-twitter"></i></li>
+      <li><i class="fa-brands fa-linkedin-in"></i></li>
+      <li><i class="fa-brands fa-youtube"></i></li>
+      <li><i class="fa-brands fa-instagram"></i></li>
+      <li><i class="fa-brands fa-whatsapp"></i></li>
+    </div>
+    <div class="footer-list">
+      <ul class="footer2-ul">
+        <li><a href="">PRIVACY POLICY</a></li>
+        <li><a href="">PRESS RELEASES</a></li>
+        <li><a href="">SHARE PRICE</a></li>
+        <li><a href="">WHISTLE BLOWER</a></li>
+        <li><a href="">FRAUD PREVENTION</a></li>
+        <li><a href="">AML</a></li>
+        <li><a href="">CAREERS</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+  <p class="foot-para">© 2024 First City Monument Bank (Licensed by the Central Bank of Nigeria)</p>
+  </footer>
   </div>
 
 </head>
