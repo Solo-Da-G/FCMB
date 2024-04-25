@@ -815,9 +815,17 @@
     }
 
     @media (max-width: 600px) {
+      
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
       body {
         width: 100%;
       }
+      
 
       .navbar {
         display: none;
@@ -851,7 +859,7 @@
       align-items: center;
       
     }
-    .query1 li{
+    .query1{
       display:block;
       list-style: none;
       justify-content: center;
@@ -860,22 +868,51 @@
       font-size: 16px; 
       cursor: pointer;
       text-align: center;  
+      line-height: 3rem;
     }
 
     .class-2{
       width: 100%;
       display: flex;
       background: url(./asset/img/topbar_back.jpg);
-
+      background:#74449E;
+      height: 40px;
+    
     }
+
     .number {
       color: orange;
-      font-size: 21px;
+      font-size: 15px;
       gap: 20px;
+      
+    }
+    .query2{
+      color: white;
+      font-size: 17px;
+      font-weight: 600;
+     margin-left:90px;
+      list-style: none;
+      padding: 10px 10px;
+      text-align: center;
+      font-size: 15px;
     }
 
     .class-3{
-      display: none;
+      display: flex;
+      width: 100%;
+    }
+
+    .query3{
+      display: inline-flex;
+      list-style: none;
+      justify-content: space-between;
+      padding: 10px;
+      background:rgb(154, 29, 154);
+      color: white;
+      align-items: center;
+      width: 100%;
+      font-weight: 500;
+
     }
 
     .class-4{
@@ -1208,6 +1245,7 @@
 
     </nav>
     <!-- for media query only -->
+    <div class="container-fluid">
     <div class="class-1">
       <ul class="query1">
         <li>OPEN AN ACCOUNT</li>
@@ -1238,7 +1276,7 @@
       <li><input type="text" name="" placeholder="Search"></li>
       <li><button class="top-button"><i class="fa-solid fa-magnifying-glass"></i></button></li>
     </div>
-
+  </div>
 
   </header>
   <div class="container-fluid" mt-4>
