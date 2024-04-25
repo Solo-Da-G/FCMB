@@ -203,41 +203,47 @@
       font-weight: 500;
     }
 
-    .dropdown-menu1:hover .dropdown-content1 {
+    .dropdown-menu1:hover .dropdown-content1{
       display: block;
       padding: 20px;
       justify-content: space-between;
+      
     }
-
+    
     .dropdown-inside1 {
       position: relative;
     }
 
     .dropinside-content1 {
       position: absolute;
-      z-index: 2;
+      z-index: 100;
       width: 270px;
       height: 290px;
       background: #5A2C82;
       color: white;
       display: none;
       border-radius: 10px 10px 10px 10px;
-      margin-right: -130px;
+      margin-left: 90%;
       box-shadow: 1px 1px 1px 1px rgb(186, 184, 184);
       justify-content: space-between;
       line-height: 2rem;
       font-weight: 500;
-      margin-top: 40px;
+      margin-bottom: 400px;
       list-style: none;
+      align-items: center;
+      
     }
 
     .dropdown-inside1:hover .dropinside-content1 {
       display: block;
       padding: 20px;
       justify-content: space-between;
+      
     }
 
-
+    .dropdown-inside1:hover{
+      color: orange;
+    }
 
     .dropdown-menu2 {
       position: relative;
@@ -378,6 +384,21 @@
     }
 
 
+    .class-1{
+      display: none;
+    }
+
+    .class-2{
+      display: none;
+    }
+
+    .class-3{
+      display: none;
+    }
+
+    .class-4{
+      display: none;
+    }
 
 
 
@@ -820,6 +841,48 @@
         display: none;
       }
 
+      /* starts(these effects is for media query ) */
+
+      .class-1{
+      display:block;
+      height: 150px;
+      width: 100%;
+      background:#5B2784;
+      align-items: center;
+      
+    }
+    .query1 li{
+      display:block;
+      list-style: none;
+      justify-content: center;
+      color: white;
+      padding: 10px;
+      font-size: 16px; 
+      cursor: pointer;
+      text-align: center;  
+    }
+
+    .class-2{
+      width: 100%;
+      display: flex;
+      background: url(./asset/img/topbar_back.jpg);
+
+    }
+    .number {
+      color: orange;
+      font-size: 21px;
+      gap: 20px;
+    }
+
+    .class-3{
+      display: none;
+    }
+
+    .class-4{
+      display: none;
+    }
+      
+
       .pic1-slide {
         background: url(./asset/img/ninbanner.png);
         width: 100%;
@@ -1051,10 +1114,20 @@
             <ul class="dropdown-content1">
               <li>CURRENT ACCOUNTS</li>
               <li>SAVINGS ACCOUNTS</li>
-              <li>INVESTMENTS</li>           
+              <li class="dropdown-inside1">INVESTMENTS
+                <ul class="dropinside-content1">
+                  <li>FIXED DEPOSITS</li>
+                  <li>GRO (App)</li>
+                  <li>GRO (Web)</li>
+                  <li>I-NEST SAVING</li>
+                  <li>CALL DEPOSITS</li>
+                  <li>EDUCATION INVESTMENT PLAN</li>
+                  <li>MUTUAL FUNDS</li>
+                </ul>
+              </li>           
               <li class="dropdown-inside1">LOANS AND CREDIT CARDS
                 <ul class="dropinside-content1">
-                  <li><i class="fa-solid fa-caret-left"></i>FASTCASH</li>
+                  <li> <i class="fa-solid fa-caret-left"></i> FASTCASH</li>
                   <li>SALARY PLUS LOAN</li>
                   <li>PREMIUM SALARY LOAN</li>
                   <li>AUTO LOAN</li>
@@ -1070,7 +1143,7 @@
             </ul>
           </li>
 
-
+          
           <li class="dropdown-menu2">BUSINESS BANKING
             <ul class="dropdown-content2">
               <li>PROPOSITIONS</li>
@@ -1134,6 +1207,39 @@
 
 
     </nav>
+    <!-- for media query only -->
+    <div class="class-1">
+      <ul class="query1">
+        <li>OPEN AN ACCOUNT</li>
+        <li>INTERNET BANKING</li>
+        <li>CONTACT US</li>             
+      </ul>
+    </div>
+
+    <div class="class-2">
+      <ul class="query2">
+        <li>TODAY'S SHARE PRICE <span class="number"> &#x20A6;7.20</span></li>
+      </ul>
+    </div>
+    <div class="class-3">
+      <ul class="query3">
+        <li>HOME</li>
+        <li>PERSONAL </li>
+        <li>BUSINESS</li>
+        <li>CORPORATE</li>
+      </ul>
+    </div>
+    <div class="class-4">
+      <div class="logo">
+        <a href=""><img src="./asset/img/logo.png" alt="" width="120px"></a>
+      </div>
+      <button class="media-menu"><i class="fa-solid fa-bars"></i></button>
+
+      <li><input type="text" name="" placeholder="Search"></li>
+      <li><button class="top-button"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+    </div>
+
+
   </header>
   <div class="container-fluid" mt-4>
 
