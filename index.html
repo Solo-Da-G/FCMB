@@ -853,13 +853,17 @@
       }
 
       /* starts(these effects is for media query ) */
-
+      /* .container-media{
+        margin-top:0px;
+      } */
       .class-1 {
         display: block;
         height: 150px;
         width: 100%;
         background: #5B2784;
         align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
 
       }
 
@@ -937,6 +941,7 @@
 
       .media-search{
         margin: 13px 0px;
+        display: flex;
       }
 
       input[type=text] {
@@ -1289,7 +1294,7 @@
 
     </nav>
     <!-- for media query only -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid container-media"> -->
       <div class="class-1">
         <ul class="query1">
           <li>OPEN AN ACCOUNT</li>
@@ -1324,7 +1329,7 @@
       <div class="media-search">
       <input type="text" name="" placeholder="Search">
       <button class="top-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+    <!-- </div> -->
     </div>
 
   </header>
